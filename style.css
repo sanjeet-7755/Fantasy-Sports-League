@@ -1,0 +1,149 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffe2c0; /* Light background for a clean look */
+  color: #333; /* Dark text color for readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header Styling */
+#header {
+  width: 100%;
+  background-color: hsl(45, 100%, 58%); /* Green header */
+  color: white; /* White text */
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#header h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#banner {
+  width: 100%;
+  height: 50vh;
+  /* display: flex; */
+  justify-content: center;
+  object-fit: cover;
+}
+
+#banner video {
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* Main Section */
+#section-2 {
+  width: 100%;
+  display: flex;
+  background-color: hsl(32, 100%, 88%);
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Team and Player Sections */
+#team-section,
+#player-section {
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #ffffff; /* White background for content sections */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 25px black;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* Labels */
+.label {
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+  color: rgba(0, 0, 0, 0.67); /* Green color for labels */
+}
+
+/* Button Links */
+.button-link-1,
+.button-link-2 {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white; /* White text for buttons */
+  transition: background-color 0.3s;
+}
+
+.button-link-1 {
+  background-color: #4caf50; /* Green for adding */
+}
+
+.button-link-1:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.button-link-2 {
+  background-color: #f44336; /* Red for deleting */
+}
+
+.button-link-2:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+/* Form Buttons */
+form button[type="submit"] {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2196f3; /* Blue for form buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background-color: #1976d2; /* Darker blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  #header h1 {
+    font-size: 24px; /* Smaller font size on mobile */
+  }
+
+  .button-link-1,
+  .button-link-2,
+  form button[type="submit"] {
+    width: 100%; /* Full-width buttons on mobile */
+    margin: 5px 0;
+  }
+}
